@@ -13,8 +13,10 @@ const Footer = () => {
   )
 }
 
+export default Footer
+
 const FooterWrapper = styled.footer`
-  position: absolute;
+  // position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
@@ -22,17 +24,18 @@ const FooterWrapper = styled.footer`
   justify-content: center;
   width: 100%;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'Notable', sans-serif;
   background-color: #000};
   color: #FFF};
 `
 
 const GithubLink = styled.a`
+  cursor: pointer;  
   display: flex;
   padding-bottom: 0.3rem;
   margin-left: 0.7rem;
-  color: #FFF};
+  color: #FFF;
   font-size: 1.7rem;
   &:hover {
     color: #FFF};
@@ -41,5 +44,3 @@ const GithubLink = styled.a`
     color: #FFF};
   }
 `
-
-export default Footer

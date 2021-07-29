@@ -23,7 +23,7 @@ const HeaderWrapper = styled.header`
   font-family: 'Notable', sans-serif;
   color: #fffc40;
   text-shadow: 5px 5px 1px #4287ff;
-  // height: 50px;
+  border-bottom: solid black;
 
 `
 const Logo = styled.img`
