@@ -37,10 +37,4 @@ const GithubLink = styled.a`
   margin-left: 0.7rem;
   color: #FFF;
   font-size: 1.7rem;
-  &:hover {
-    color: #FFF};
-  }
-  &:active {
-    color: #FFF};
-  }
 `
