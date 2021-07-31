@@ -29,5 +29,4 @@ const HeaderWrapper = styled.header`
 const Logo = styled.img`
   max-width: 300px;
   margin-left: 20px;
-  // max-height: 500px;
 `

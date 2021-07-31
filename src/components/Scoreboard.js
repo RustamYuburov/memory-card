@@ -27,10 +27,6 @@ const ScoreboardWrapper = styled.div`
 `
 
 const ScoreWrapper = styled.div`
-  // border: solid 2px;
-  // // display: flex;
-  // box-shadow: -5px -5px 15px 5px #e83d3a, 5px 5px 15px 5px #4287ff;
-  
   &, & * { box-sizing: border-box; transition: 400ms; }
   font-size: 25px;
   padding: 0.7rem;
