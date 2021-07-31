@@ -9,7 +9,7 @@ A React based web app which simluates a memory game: Get points for choosing a c
 ### Installing and running
 
 ```bash
-git clone https://github.com/igorashs/react-memory-card.git
+git clone https://github.com/RustamYuburov/memory-card.git
 cd react-memory-card
 npm install
 npm run start
