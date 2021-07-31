@@ -2,17 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Scoreboard = (props) => {
-  return(
+  const { currentScore, bestScore } = props;
+  return (
     <ScoreboardWrapper>
-      <ScoreWrapper>
-        Current score: {props.currentScore}
-      </ScoreWrapper>
-      <ScoreWrapper>
-        Best score: {props.bestScore}
-      </ScoreWrapper>
+      <ScoreWrapper>Current score: {currentScore}</ScoreWrapper>
+      <ScoreWrapper>Best score: {bestScore}</ScoreWrapper>
     </ScoreboardWrapper>
-  )
-}
+  );
+};
 
 export default Scoreboard;
 
@@ -23,8 +20,8 @@ const ScoreboardWrapper = styled.div`
   padding: 1rem;
   margin: 3rem 0 3rem 0;
   font-family: 'Staatliches', Arial;
-  word-spacing: 5px
-`
+  word-spacing: 5px;
+`;
 
 const ScoreWrapper = styled.div`
   &, & * { box-sizing: border-box; transition: 400ms; }
@@ -43,4 +40,4 @@ const ScoreWrapper = styled.div`
   @include flex-center;
   flex-direction: column;
 }
-`
+`;

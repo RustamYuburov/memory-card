@@ -39,29 +39,29 @@ const Main = () => {
 
   const playRound = (pokemonName) => {
     if (clickedPokemons.includes(pokemonName)) {
-      resetGame()
+      resetGame();
     } else {
       const newScore = currentScore + 1;
-      if(newScore > bestScore) setBestScore(newScore);
+      if (newScore > bestScore) setBestScore(newScore);
       setCurrentScore(newScore);
-      if(bestScore === 12) {
-        alert('You\'ve won the game! Grats!!');
+      if (bestScore === 12) {
+        alert("You've won the game! Grats!!");
         resetGame();
       }
-      setClickedPokemons(prevState => [...prevState, pokemonName])
+      setClickedPokemons((prevState) => [...prevState, pokemonName]);
     }
-  }
+  };
 
   const handleClick = (e, pokemonName) => {
     e.preventDefault();
     playRound(pokemonName);
     setPokemons(shuffleArray(pokemons));
-  }
+  };
 
   const resetGame = () => {
     setClickedPokemons([]);
     setCurrentScore(0);
-  }
+  };
 
   const shuffleArray = (array) => {
     return [...array].sort(() => Math.random() - 0.5);
@@ -70,7 +70,11 @@ const Main = () => {
   return (
     <MainWrapper>
       <Scoreboard currentScore={currentScore} bestScore={bestScore} />
-      {isLoading ? <h1>Loading Pokemons...</h1> : <CardGrid pokemons={pokemons} handleCardClick={handleClick}/>}
+      {isLoading ? (
+        <h1>Loading Pokemons...</h1>
+      ) : (
+        <CardGrid pokemons={pokemons} handleCardClick={handleClick} />
+      )}
     </MainWrapper>
   );
 };

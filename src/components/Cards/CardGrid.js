@@ -4,15 +4,15 @@ import Card from './Card';
 
 const CardGrid = (props) => {
   const { pokemons, handleCardClick } = props;
-  const pokemonCards = pokemons.map(pokemon => (
-    <Card key={pokemon.id} pokemon={pokemon} handleCardClick={handleCardClick} />
-  ))
-  return(
-    <CardGridWrapper>
-      {pokemonCards}
-    </CardGridWrapper>
-  )
-}
+  const pokemonCards = pokemons.map((pokemon) => (
+    <Card
+      key={pokemon.id}
+      pokemon={pokemon}
+      handleCardClick={handleCardClick}
+    />
+  ));
+  return <CardGridWrapper>{pokemonCards}</CardGridWrapper>;
+};
 
 export default CardGrid;
 
@@ -28,4 +28,4 @@ const CardGridWrapper = styled.div`
   @media (max-width: 550px) {
     grid-template-columns: repeat(2, 1fr);
   }
-`
+`;

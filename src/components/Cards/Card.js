@@ -4,17 +4,17 @@ import styled from 'styled-components';
 const Card = (props) => {
   const { pokemon, handleCardClick } = props;
   return (
-    <CardWrapper onClick={(e) => handleCardClick(e, pokemon.name)} >
+    <CardWrapper onClick={(e) => handleCardClick(e, pokemon.name)}>
       <ImgWrapper src={pokemon.image}></ImgWrapper>
       <TitleWrapper>{pokemon.name}</TitleWrapper>
     </CardWrapper>
-  )
-}
+  );
+};
 
 export default Card;
 
 const CardWrapper = styled.div`
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font-size: 25px;
   padding: 0.7rem;
   transition: 300ms;
@@ -41,13 +41,13 @@ const CardWrapper = styled.div`
     background: rgba(255, 255, 255, 0.4);
     transition: 400ms;
   }
-`
+`;
 
 const ImgWrapper = styled.img`
   padding: 1rem;
   margin-left: 1rem;
   width: 150px;
-`
+`;
 
 const TitleWrapper = styled.p`
   padding: 0.5rem;
@@ -57,4 +57,4 @@ const TitleWrapper = styled.p`
   color: yellow;
   text-shadow: 2px 2px 10px black;
   text-align: center;
-`
+`;

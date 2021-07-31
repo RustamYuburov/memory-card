@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { FaGithub } from 'react-icons/fa'
+import React from 'react';
+import styled from 'styled-components';
+import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -10,10 +10,10 @@ const Footer = () => {
         <FaGithub />
       </GithubLink>
     </FooterWrapper>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
 
 const FooterWrapper = styled.footer`
   bottom: 0;
@@ -27,13 +27,13 @@ const FooterWrapper = styled.footer`
   font-family: 'Notable', sans-serif;
   background-color: #000};
   color: #FFF};
-`
+`;
 
 const GithubLink = styled.a`
-  cursor: pointer;  
+  cursor: pointer;
   display: flex;
   padding-bottom: 0.3rem;
   margin-left: 0.7rem;
-  color: #FFF;
+  color: #fff;
   font-size: 1.7rem;
-`
+`;
