@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import Card from './Card';
 
-const CardGrid = () => {
+const CardGrid = (props) => {
+  const { pokemons, handleCardClick } = props;
+  const pokemonCards = pokemons.map(pokemon => (
+    <Card key={pokemon.id} pokemon={pokemon} handleCardClick={handleCardClick} />
+  ))
   return(
     <CardGridWrapper>
-      <h1>Grid of Cards</h1>
+      {pokemonCards}
     </CardGridWrapper>
   )
 }
@@ -12,11 +17,11 @@ const CardGrid = () => {
 export default CardGrid;
 
 const CardGridWrapper = styled.div`
-  border: solid;
-  width: 70%;
+  width: 60%;
+  height: 700px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
+  gap: 2rem;
   @media (max-width: 750px) {
     grid-template-columns: repeat(3, 1fr);
   }
