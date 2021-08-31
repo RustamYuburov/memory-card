@@ -15,6 +15,10 @@ npm install
 npm run start
 ```
 
+## Screenshot
+
+![memory-cart-screenshot](https://user-images.githubusercontent.com/66270461/131547775-45fbe6f8-1378-4e83-86b9-550cabd6746e.png)
+
 ## Built With
 
 - [React](https://reactjs.org/) with Hooks.
