@@ -22,7 +22,6 @@ const CardWrapper = styled.div`
   height: 250px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-right-color: rgba(255, 255, 255, 0.1);
   border-bottom-color: rgba(255, 255, 255, 0.1);
